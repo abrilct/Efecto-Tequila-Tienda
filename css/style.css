@@ -1,0 +1,232 @@
+h1 {
+  font-family: Kaushan script, cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h2 {
+  font-family: Open Sans condensed, sans serif;
+  color: #ff9f4b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h3 {
+  font-family: Roboto, sans serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h4 {
+  font-family: Roboto, sans serif;
+}
+
+.Animacion {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+nav ul li {
+  margin: 1px 50px 1px 50px;
+  padding: 1px 50px 1px 50px;
+  font-family: Roboto, sans serif;
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul li {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #estilo__indicador__Escritorio {
+    display: none;
+  }
+}
+
+footer {
+  margin-top: 50px;
+  padding: 15px 30px 30px 15px;
+  background: peachpuff;
+  background: -webkit-gradient(linear, left bottom, left top, from(peachpuff), to(white));
+  background: linear-gradient(0deg, peachpuff 0%, white 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer h6 {
+  color: black;
+}
+
+footer p {
+  font-family: Roboto, sans serif;
+}
+
+footer #footer__redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+
+footer #footer__redes i {
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+footer #footer__redes a {
+  margin-bottom: 3px;
+  color: black;
+  font-family: Roboto, sans serif;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer #footer__redes p {
+    font-size: smaller;
+  }
+}
+
+#estilo__Productos {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-family: Roboto, sans serif;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.card-text {
+  font-family: Roboto, sans serif;
+  text-align: center;
+}
+
+#estilo__link {
+  text-decoration: none;
+}
+
+#estilo__link :hover {
+  color: #a08f8e;
+}
+
+#producto__Descripcion {
+  font-family: Roboto, sans serif;
+  margin-top: 20px;
+}
+
+.producto__Imagen {
+  border: solid 3px black;
+  width: 400px;
+  height: 400px;
+  margin: 20px 0px 20px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .producto__Imagen {
+    width: 300px;
+    height: 300px;
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+form {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background-color: black;
+  padding: 20px 0px 20px 0px;
+}
+
+form .container {
+  padding: 20px 10px 20px 10px;
+  background-color: #faf6f6;
+  width: 100%;
+}
+
+form .container h4 {
+  color: #131111;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 5px 3px 5px 3px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 3px 5px 3px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+form #button__submit {
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+form #button__submit :hover {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=style.css.map */

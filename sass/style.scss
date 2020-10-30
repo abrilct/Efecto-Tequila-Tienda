@@ -1,0 +1,190 @@
+$Titulo:Kaushan script, cursive;
+$Subtitulo:Open Sans condensed, sans serif;
+$ColorSubtitulo:rgb(255, 159, 75);
+$Texto:Roboto, sans serif;
+$ColorFondo: rgba(0, 0, 0, 0.644);
+$ColorTextoClaro:rgb(206, 194, 160);
+$ColorTextoOscuro: rgb(19, 17, 17);
+
+h1{
+    font-family:$Titulo;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    font-family: $Subtitulo;
+    color:$ColorSubtitulo;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    font-family:$Texto;
+    display: flex;
+    justify-content: center;
+}
+h4{
+    font-family:$Texto;
+}
+
+.Animacion{
+	animation-duration: 5s;
+	animation-name: aparecer;
+}
+
+@keyframes aparecer{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+nav{
+    ul{
+        li{
+            margin:1px 50px 1px 50px;
+            padding:1px 50px 1px 50px;
+            font-family: $Texto;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    nav{
+        ul{
+            li{
+                margin:0px;
+                padding:0px;        
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    #estilo__indicador__Escritorio{
+        display:none;
+    }
+}
+
+
+footer{
+    margin-top: 50px;
+    padding: 15px 30px 30px 15px;
+    background: rgb(255,218,185);
+    background: linear-gradient(0deg, rgba(255,218,185,6) 0%,white 100%);
+    display: flex;
+    justify-content: space-evenly;
+    h6{
+        color:black;
+    }
+    p{
+        font-family: $Texto;
+    }
+    #footer__redes{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color:black;
+        i{
+            margin-bottom: 10px;
+            font-size: small;
+        }
+        a{
+            margin-bottom: 3px;
+            color:black;
+            font-family:$Texto;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+       #footer__redes{
+           p{
+               font-size: smaller;
+           }
+       }
+    }
+}
+
+#estilo__Productos{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+// CARDS
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-title{
+    font-family: $Texto;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+.card-text{
+    font-family: $Texto;
+    text-align: center;
+}
+
+#estilo__link{
+    text-decoration:none;
+    :hover{
+        color:rgb(160, 143, 142);
+    }
+}
+
+#producto__Descripcion{
+    font-family:$Texto;
+    margin-top: 20px;
+}
+
+.producto__Imagen{
+    border: solid 3px black;
+    width:400px;
+    height:400px;
+    margin: 20px 0px 20px 0px;
+}
+@media only screen and (max-width: 768px){
+    .producto__Imagen{
+        width:300px;
+        height:300px;
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+
+form {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color:black;
+    padding: 20px 0px 20px 0px; 
+    .container {
+        padding: 20px 10px 20px 10px;
+        background-color: #faf6f6;
+        width: 100%;
+        h4{
+            color:$ColorTextoOscuro;
+            align-self: center;
+            margin:5px 3px 5px 3px;
+        }
+    }
+    input{
+        width: 100%;
+        padding: 12px;
+        margin: 5px 3px 5px 3px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    #button__submit{
+        color: white;
+        border: none;
+        width: 100%;
+        :hover {
+            opacity: 0.8;
+        }
+    }
+}
